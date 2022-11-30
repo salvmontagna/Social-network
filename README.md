@@ -1,4 +1,4 @@
-# What is this project
+# About
 This social network is a university exam project designed for Database and Web Programming and was developed in HTML, CSS, PHP, Javascript and SQL (MariaDB), all pure languages without framework.
 
 ## The functionalities
