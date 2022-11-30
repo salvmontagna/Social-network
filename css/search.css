@@ -1,0 +1,195 @@
+body {
+    font-family:"Source Sans Pro";
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+
+main {
+ 
+    display: flex;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    margin-left: 25%;
+  }
+
+  .error {
+    font-weight: bold;
+    color: red;
+  
+  }
+
+* {
+    
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    
+}
+
+.img_list{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+li, a, button{
+
+    
+    font-weight:500;
+    font-size:16px;
+    color: #edf0f1;
+    text-decoration:none;
+}
+
+#getting_username{
+    visibility: hidden;
+}
+
+.hiding_following{
+    visibility: hidden;
+}
+
+.following_list{
+    padding: 4px 15px;
+    background-color: rgba(0,136,169,1);
+    border:none;
+    border-radius:50px;
+    cursor: pointer;
+    transition: all 0,3s ease 0s;
+    font-weight:500;
+    font-size:16px;
+    color: #edf0f1;
+    text-decoration:none;
+}
+
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  
+  }
+
+#myUL li a {
+ 
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block
+  }
+
+.name_list{
+ margin-bottom: -45%;
+}
+
+  #myUL li a:hover:not(.header) {
+    background-color: #eee;
+  }
+
+nav{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 30px 10%;
+    height: 90px;
+    background-color: #24252A;
+}
+
+.logo{
+    cursor:pointer;
+}
+
+.nav_link{
+    list-style:none;
+}
+
+.nav_link li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_link li a{
+
+    transition: all 0.3s ease 0s;
+
+}
+
+.nav_link li a:hover{
+
+    color: #0088a9;
+
+}
+
+#myInput {
+    background-image: url('../images/search2.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+
+#button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border:none;
+    border-radius:50px;
+    cursor: pointer;
+    transition: all 0,3s ease 0s;
+
+    font-weight:500;
+    font-size:16px;
+    color: #edf0f1;
+    text-decoration:none;
+
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border:none;
+    border-radius:50px;
+    cursor: pointer;
+    transition: all 0,3s ease 0s;
+}
+
+/* Responsive for mobile version */
+@media (max-width: 500px){
+   
+    header {
+        height: 200px;
+        font-size: 16px;
+    }
+    header::before {
+        height: 200px;
+    }
+   
+    .mini-container .item {
+        width: 70%;
+    }
+
+    footer{
+        position: absolute;
+        height: 60px;
+        font-size: 12px;
+        bottom:0;
+    }
+}

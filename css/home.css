@@ -1,0 +1,290 @@
+body {
+    font-family:"Source Sans Pro", sans-serif;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+
+* {
+    
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    
+}
+
+li, a, button{
+
+    
+    font-weight:500;
+    font-size:16px;
+    color: #edf0f1;
+    text-decoration:none;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 30px 10%;
+    height: 90px;
+    background-color: #24252A;
+}
+
+.logo{
+    cursor:pointer;
+}
+
+.nav_link{
+    list-style:none;
+}
+
+.nav_link li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_link li a{
+
+    transition: all 0.3s ease 0s;
+
+}
+
+.nav_link li a:hover{
+
+    color: #0088a9;
+
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border:none;
+    border-radius:50px;
+    cursor: pointer;
+    transition: all 0,3s ease 0s;
+}
+
+#time {
+    font-style: italic;
+}
+
+#username #name {
+    font-weight: bold;
+}
+
+.user_section{
+    
+    display: flex;
+}
+
+#username {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    font-size: 18px;
+    color: rgb(51, 51, 51);
+    line-height: 24px;
+    text-align: center;
+}
+
+#line {
+    background-color: #e6e6e6;
+    display: block;
+    margin-top: 10px;
+    height: 2px;
+    width: auto;
+}
+
+/* Textual contents */
+.post_title{
+
+    color: rgb(51, 51, 51);
+    font-size: 24px;
+    word-wrap: break-word;    
+}
+.user_img{
+    /*color: rgba(0,0,0,0.25);*/
+    border-radius: 50%;
+    border: 0px solid #24252A;
+    width: 50px;
+    height: 50px;
+    
+}
+
+.user_img_likes{
+    padding-top:4px;
+    padding-right: 4px;
+    border-radius: 50%;
+    border: 0px solid #24252A;
+    width: 35;
+    height: 35px;
+}
+
+.likes_section{
+
+    display: flex;
+    flex-direction: row;
+    padding-top: 4px;
+    
+}
+
+.like_counter{
+    padding-left: 5px;
+    font-size: 36px;
+}
+.like_button{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background: transparent  url("../images/like.png") no-repeat 0 0 ;
+}
+
+.like_button:hover{
+    background-position: 0 -40px;
+}
+
+.unlike_button{
+    height: 40px;
+    width: 40px;
+    background-position: 0 -40;
+    display: inline-block;
+    background: transparent  url("../images/unlike.png") no-repeat 0 0 ;
+}
+
+.unlike_button:hover{
+
+    background-position: 0 -40px;
+
+}
+
+#getting_username{
+    visibility: hidden;
+}
+
+
+
+
+.hidden_like{
+    visibility: hidden;
+}
+
+.user_nick{
+    /* Specifiche */
+    font-size: 18px;
+    font-weight: normal; 
+    color: #24252A;
+    padding-top: 25px;
+    padding-left: 5px;
+    
+}
+
+.modal_view{
+   
+
+    display: block;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    z-index:2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+
+ 
+.modal_view .internal_div {
+
+    border: 0px solid #24252A;
+    border-radius: 15px;
+    background-color: #24252A;;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+   
+
+   
+
+}
+
+.users_title{
+
+    font-size: 24px;
+    color: white;
+
+
+}
+
+
+.mini_container {
+    width: 25%;
+    height: auto;
+    margin: auto;
+    margin-top: 60px;
+    padding: 8px;
+    border: 0px solid #24252A;
+    border-radius: 15px;
+    background-color: #E1E1E1;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* specifiche comuni con title e number */
+    
+    font-weight: bold;
+   
+}
+
+
+
+
+.item img {
+    width: 100%;
+    border-radius: 15px;
+    border: 0px solid black;
+    display: flex;
+}
+
+#avatar {
+    
+   /* Specifiche */
+    width: 100px;
+    height: 110px;
+    border-radius: 50%;
+    border: 2px solid black;
+    /* centramento al banner*/
+    margin-top: -20px;
+    z-index: 1;
+
+}
+
+
+/* Responsive per il mobile */
+@media (max-width: 500px){
+   
+    header {
+        height: 200px;
+        font-size: 16px;
+    }
+    header::before {
+        height: 200px;
+    }
+   
+    .mini-container .item {
+        width: 70%;
+    }
+
+    footer{
+        position: absolute;
+        height: 60px;
+        font-size: 12px;
+        bottom:0;
+    }
+}
