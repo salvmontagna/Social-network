@@ -19,6 +19,8 @@ As you can see from the previous section, I've created a database with the table
 
 ## Installation 
 No installation is required. You can download and import database structure "social.sql" already defined and then paste the repository on the appropriate web server (like xampp for windows users) and replace:
-1) api/conn.php with your database data; 
-2) api/do_search_content.php with your pixabay/giphy or other service key;
-3) Put your hosting URL on host variable which you can find at the end of the source: create_post.js; home.js; searchusername.js; signup.js.
+<ul type="bullet">
+  <li>api/conn.php with your database data; </li>
+  <li>api/do_search_content.php with your pixabay/giphy or other service key;</li>
+  <li>Put your hosting URL on host variable which you can find at the end of the source: create_post.js; home.js; searchusername.js; signup.js.</li>
+</ul>
