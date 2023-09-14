@@ -1,5 +1,5 @@
 # About
-This social network is a university exam project designed for Database and Web Programming subject and was developed in HTML, CSS, PHP, Javascript and SQL (MariaDB), all pure languages without framework.
+This social network is a university exam project designed for Database and Web Programming subject and was developed in HTML, CSS, PHP, Javascript Vanilla and SQL (MariaDB), all pure languages without framework.
 
 ## The functionalities
 The social network gives you the opportunity to follow the users you appreciate the most, to view their posts and to appreciate them through a like.
