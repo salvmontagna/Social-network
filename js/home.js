@@ -2,29 +2,21 @@
 //It is called by the "check_like" function which checks if the button is set to "like" or "not unlike"
 function like(event){
   const id_post_fetched = event.currentTarget.value;
-  fetch(host+'/api/like.php?id_post='+id_post_fetched).then(onResponse2).then(onText);
+  fetch(host+'/api/like.php?id_post='+id_post_fetched).then(onResponseText).then(onTextGetting);
 }
 
-function onResponse2(response){
+function onResponseText(response){
   return response.text();
 }
 
-function onText(){
+function onTextGetting(){
   post_getting();
 }
 
 //Delete del like dal database
 function unlike(event){
   const id_post_fetched = event.currentTarget.value;
-  fetch(host+'/api/unlike.php?id_post='+id_post_fetched).then(onResponse3).then(onText2);  
-}
-
-function onResponse3(response){
-  return response.text();
-}
-
-function onText2(){
-  post_getting();
+  fetch(host+'/api/unlike.php?id_post='+id_post_fetched).then(onResponseText).then(onTextGetting);  
 }
 
 //Function that checks if the like button is actually set to like or unlike, subsequently calling the correct like or unlike function
