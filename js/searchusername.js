@@ -2,11 +2,11 @@
 //It is called by the "check_following" function which checks if the button is set to "follow" or "unfollow"
 function follow(event){
     username_fetched= event.currentTarget.value;
-    fetch(host+'/api/follower.php?username='+(getting_username).replace(/ /g,'')+'&username_following='+username_fetched).then(onResponse);
+    fetch(host+'/api/follower.php?username='+(getting_username).replace(/ /g,'')+'&username_following='+username_fetched).then(onResponseText);
 }
 function unfollow(event){
     username_fetched= event.currentTarget.value;
-    fetch(host+'/api/unfollower.php?username='+ (getting_username).replace(/ /g,'') +'&username_following='+username_fetched).then(onResponse2);
+    fetch(host+'/api/unfollower.php?username='+ (getting_username).replace(/ /g,'') +'&username_following='+username_fetched).then(onResponseText);
 }
 
 
@@ -23,11 +23,7 @@ function check_following(event){
     }
 }
 
-function onResponse(response){
-    return response.text();
-}
-
-function onResponse2(response){
+function onResponseText(response){
     return response.text();
 }
 
@@ -88,10 +84,6 @@ function onJSON(json){
         var last_getting_username = getting_username.replace(/ /g,'');
         if(elem.username.toLowerCase()!==(last_getting_username).toLowerCase()) a.appendChild(label_following);        
     }
-}
-
-function onResponse(response){
-    return response.json();
 }
 
 //Fetch aim research
