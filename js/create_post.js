@@ -1,10 +1,10 @@
 //Function to load the post into the database
 function post_uploading(){
     const fetch_title = document.querySelector(".post_title").value;
-    fetch(host+'/api/post_uploading.php?title='+ fetch_title.trim() + '&image='+fetch_img_url).then(onResponse2).then(onText);
+    fetch(host+'/api/post_uploading.php?title='+ fetch_title.trim() + '&image='+fetch_img_url).then(onResponseText).then(onText);
 }
 
-function onResponse2(response){
+function onResponseText(response){
     return response.text();
 }
 
@@ -127,11 +127,11 @@ function service_check(){
         under_section.appendChild(error);
     }
     else //If selected, I fetch
-    fetch(host+"/api/do_search_content.php", { method: "POST", body: formData }).then(onResponse).then(onJson);
+    fetch(host+"/api/do_search_content.php", { method: "POST", body: formData }).then(onResponseJson).then(onJson);
     
 }
 
-function onResponse(response){
+function onResponseJson(response){
     return response.json();
 }
 
