@@ -84,12 +84,12 @@ function onText(flag){
 
 
 //Function that returns the response of the check username query
-function onResponse(response){
+function onResponseText(response){
   return response.text();
 }
 
 function username_check(){
-  fetch('http://localhost/social/api/checkuser.php?username=' + user_script.value).then(onResponse).then(onText);
+  fetch('http://localhost/social/api/checkuser.php?username=' + user_script.value).then(onResponseText).then(onText);
 }
 
 //Function to validate the correct email format
